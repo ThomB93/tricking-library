@@ -17,4 +17,4 @@ jobs:
         run: pwd
       
       - name: List files in directory
-        uses: ls
+        run: ls
