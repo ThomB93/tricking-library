@@ -4,6 +4,7 @@
       <div class="text-center">
         <logo/>
         <vuetify-logo/>
+
       </div>
       <v-card>
         <v-card-title class="headline">
@@ -93,6 +94,10 @@ export default {
     return Axios.get("http://localhost:5000/api/home")
       .then(({data}) => {
         return {message: data} //once the promise is resolved, it will return this object with the message property that contains the response data
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
       })
   }
 }
