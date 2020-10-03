@@ -21,3 +21,9 @@ jobs:
         
       - name: List files in directory
         run: ls
+
+      - name: Check dotnet CLI
+        run: dotnet
+
+      - name: Check npm CLI
+          run: npm
